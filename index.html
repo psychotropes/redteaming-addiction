@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>A dive into Red Teaming Psychology</title>
+    <meta name="description" content="This presentation aims to show that conducting Penetration Tests can be addictive due to its suspense inducing tasks.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="./webslides/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="./webslides/css/svg-icons.css">
+
+    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+    <!-- FACEBOOK -->
+    <!-- EDIT -->
+    <meta property="og:url" content="https://securosophy.com">
+
+    <!-- EDIT -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="A dive into Red Teaming Psychology" />
+    <meta property="og:description" content="This presentation aims to show that conducting Penetration Tests can be addictive due to its suspense inducing tasks.">
+
+    <!-- EDIT -->
+    <meta property="og:updated_time" content="2017-04-16T16:24:56">
+    <!-- EDIT -->
+    <meta property="og:image" content="" >
+    <!-- EDIT -->
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="429">
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides">
+
+    <!-- EDIT -->
+    <meta name="twitter:creator" content="@operatorequals">
+    <!-- EDIT -->
+    <meta name="twitter:title" content="A Dive into Red Team Psychology">
+    <!-- EDIT -->
+    <meta name="twitter:description" content="This presentation aims to show that conducting Penetration Tests can be addictive due to its suspense inducing tasks">
+
+    <!-- EDIT -->
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="../webslides/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="../webslides/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="../webslides/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="../webslides/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="../webslides/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="../webslides/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="../webslides/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/operatorequals" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>operatorequals @ Github.com</em>
+            </a>
+          </li>
+          <li class="blog" >
+            <!-- <div style="background-image: url(./images/securosophy.svg);"> -->
+            <a rel="external" href="https://securosophy.com" title="Blog">
+              <em>Securosophy</em>
+            </a>
+          </div>
+          </li>
+          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides">
+
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section class="bg-red">
+          <!-- <span class="background dark" style="background-image:url('https://source.unsplash.com/R1J6Z1cnJZc/1600x800')"></span> -->
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1>
+              <strong>
+                An dive into <br/> Red Teaming Psychology
+              </strong>
+            </h1>
+            <p class="text-symbols">* * * </p>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap bg-white">
+            <img src="./images/kourtzanis.webp" class="alignleft size-30 wrap-align-items"/>
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong><code class="bg-white">$ whoami</code></strong>
+            </h2>
+            <!-- <hr> -->
+            <p>
+              <h5><span class="aligncenter">I am <strong> John Torakis </strong></span></h5><br/>
+              I currently work as a <br/>
+              <code>/S(enio)?r.?\s+(Cloud\s+Security)|((Sec|Dev){1,2}Ops)\s+Engineer/i</code>,<br/><br/>
+              have also worked as a <br/>
+              <code>/(SOC\s+Analyst)|(Pen(etration)?\s+Tester)/i</code><br/><br/>
+            <!-- <p class="text-symbols">* * * </p> -->
+            <p class="text-symbols">* * * </p>
+
+              I am writing the blog <strong><a href="https://securosophy.com">securosophy.com</a></strong> since 2016,<br/>
+              I've authored a small novel and...<br/>
+              <span class="alignright">
+              I currently pursue my <i>BSc in Psychology</i>
+              </span>
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="slide-top">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap">
+            <div class="grid horizontal-align">
+              <div class="column">
+                <h3 class=""><strong>The Setting</strong></h3>
+                <p>
+                <ll class="">
+                  <li> You have performed your <strong>reckon phase</strong> and got some email addresses </li>
+                  <li> You have <strong>deployed your C2 infra</strong> </li>
+                  <li> You just sent a carefully crafted <strong>phishing campaign</strong> </li>
+                  <li> And you <strong>wait</strong>... </li>
+                </ll>
+              </p>
+              </div>
+
+            </div>
+              <div class="slide-bottom alignright" style="margin-top: 10%">
+                <h1><strong>How do you <i>feel</i>?</strong></h1>
+              </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-red slide-top">
+<!--           <span class="background" style="background-image:url('')"></span>
+ -->
+          <h1> The Feelings </h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <ul class="aligncenter" style="list-style: none">
+              <li> <h3> Tension </h3> </li> <br/>
+              <li> <h3> Restlessness </h3> </li> <br/>
+              <li> <h3> Anxiousness </h3> </li> <br/>
+              <li> <h3> Self-Doubt </h3> </li> <br/>
+              <li> <h3> Craving </h3> </li>
+            </ul>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section class="bg-gray">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-100">
+            <h3 class=""> And then you get this: </h3>
+            <img src="./images/cobalt_connectback.webp" class="size-100"/>
+            <h2 class="alignright"> How do you <i> feel </i> now? </h2>
+          </div>
+          <!-- .end .wrap -->
+          </section>
+
+        <section class="bg-gray slide-top">
+          <h1> The Feelings Now</h1>
+          <hr/>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter fadeInUp">
+            <ul class="aligncenter" style="list-style: none">
+              <li> <h3> Relief </h3> </li> <br/>
+              <li> <h3> Pleasure </h3> </li> <br/>
+              <li> <h3> Excitement </h3> </li> <br/>
+              <li> <h3> Confidence </h3> </li> <br/>
+              <li> <h3> More Craving? </h3> </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap grid size-100 bg-gray ">
+            <h2><strong> What about <i>Other Jobs</i> </strong></h2>
+            <hr>
+            <div class="column size-50 ">
+              <h4>Do <strong>other jobs</strong> like ...</h4>
+                <ll class="">
+                <li>delivery service workers</li>
+                <li>garbage collectors (I mean the real people)</li>
+                <li>cooks</li>
+                <li>clerks</li>
+                </ll>
+                <h4>... get such <i>mood swings</i>?</h4>
+              </div>
+            <div class="column alignright">
+                <h4>Maybe they are not that <strong>passionate</strong> with their jobs?</h4>
+              <hr/>
+              <p class="alignright">
+                <strong>I believe it's something else...</strong>
+              </p>
+            </div>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-gray aligncenter">
+          <h3> Let's try something... </h3>
+          <h5>The next some slides will try to trigger emotions similar to this image...</h5>
+          <img src="./images/cobalt_connectback.webp" class="size-100" style="margin: 5% 0 5% 0%;"/>
+          <h4>Ready?</h4>
+        </section>
+
+        <section class="slide-top" >
+          <div  class="aligncenter">
+            <img src="./images/smoke-papers-nobg.webp" class="aligncenter" />
+          </div>
+        </section>
+
+        <section class="slide-top " >
+          <span class="background" style="background-image:url('./images/slots.webp');"></span>
+        </section>
+
+        <section class="slide-top" >
+            <span class="background" style="background-image:url('./images/porn-couch.webp');"></span>
+        </section>
+
+        <section class="slide-top">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-90 slide-top">
+            <h2>Can it be considered an <strong>Addiction</strong>?</h2>
+            <hr>
+            As of the <i>Diagnostic and Statistical Manual of Mental Disorders</i> (DSM-5) (2013):
+            <li> <strong>Gambling</strong> and <strong>Internet usage</strong> are considered addictive </li>
+            <br/>
+            <li> <strong>Smoking</strong> has been classified as an addictive behaviour in DSM-III (since 1974) </li>
+            <li> <strong>Porn usage</strong> has been studied by Psychologists as an addictive behaviour too, since around 2011 </li>
+            <br/>
+          <h5> So, if this image creates analogous feelings to you: </h5>
+          <img src="./images/cobalt_connectback.webp" class="size-100" style="margin: 0% 0 2% 0%;"/>
+          <h4 class="alignright"> This might suggest you are indeed a <strong>shell junkie</strong>! </h4>
+
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+        <section class="bg-black slide-top">
+            <h1 class="aligncenter">The <strong>Addiction</strong> Starter Pack</h1>
+            <br/>
+            <div style="margin-bottom: 4%; margin-top: 6%" class="">
+            <h2> <i>No Satiation</i> </h2>
+
+            <h4> Anything you get, after a while it's not enough! </h4>
+            <br/>
+            You can get a <strong>shell</strong>, a <strong>Domain Admin's NTLM</strong>, a whole <strong>DCSync dump</strong> and...
+
+            <h5 style="margin-left: 10%" class="aligncenter"> you could feel the urge to go further... </h5>
+            <h5 style="margin-right: 10%" class="alignright"> to not stop the test... </h5>
+            </div>
+        </section>
+
+        <section class="bg-black slide-top">
+            <h1 class="aligncenter">The <strong>Addiction</strong> Starter Pack</h1>
+            <br/>
+            <div style="margin-bottom: 2%; margin-top: 6%">
+            
+            <h2> <i>No Patience / No Giving Up</i> </h2>
+            <h4> During a Penetration Test sometimes <strong>doing nothing</strong> is the right thing! </h4>
+            <h5 style="margin-left: 10%">While...</h5>
+            
+            <div class="aligncenter" style="margin-bottom: 2%">
+            <li style="list-style: none"> ... waiting for emails to get opened and clicked </li>
+            <li style="list-style: none" class="alignright"> ... waiting for the long sleep DNS beacon to call home </li>
+            </div>
+            <div style="margin-top: 5%">
+            <h4> Other times, what is tried won't work and only consumes time <i>(and mental energy)</i> </h4>
+            <div class="aligncenter" style="margin-top: 2%">
+            <li style="list-style: none"> This hash will not crack. Ever... </li>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="bg-black slide-top">
+            <h1 class="aligncenter">The <strong>Addiction</strong> Starter Pack</h1>
+            <br/>
+            <div style="margin-bottom: 2%; margin-top: 6%">
+            <h2> <i>Withdrawal</i> </h2>
+            <h4> Reporting time can suck... </h4>
+            <div class="aligncenter" style="margin-bottom: 2%">
+            <li style="list-style: none"> The fun part is over, reporting days feel like Blue Tuesdays </li>
+            <li style="list-style: none" class="alignright"> Reporting gets under-appreciated, failing to convey the hard work done </li>
+            </div>
+
+            <h4> Weekends can suck too, let's fill them up with work... </h4>
+            <div class="aligncenter">
+            <li style="list-style: none"> It's often difficult to unwind from the PenTest high, leading to burnout </li>
+            <li style="list-style: none" class="alignright"> Logging-in unscheduled weekends maximizes the chance to do something reckless (and get caught)</li>
+            </div>
+            </div>
+        </section>
+
+        <section class="slide-top">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-100">
+            <h2> Remediation Steps </h2>
+              <h4> <i>Disclaimer</i>: personal observations here </h4>
+              <hr/>
+            <ul class="flexblock">
+
+              <li> <strong> Work-Life Balance </strong>
+
+                <p> It matters a lot <i><strong>who we are</strong> when not wearing the "hat"</i>
+                </p>
+
+                <p> Mentally working <i>after working-hours</i> might <i>seem as an advantage</i>, but mostly <strong>burns us out</strong>
+                </p>
+
+              </li>
+
+              <li> <strong> Self-Worth </strong>
+                <p> <i>Feeding our self-worth</i> with how many shells we land, also <strong>feeds anxiety and self-deprecation</strong>
+                </p>
+              </li>
+
+              <li> <strong> Professionalism </strong>
+                <p> <i>Planning for at least as long as will operate</i>, makes the operations <strong>short and to the point</strong><br>
+                  <i>(less possible to get caught while improvising too)</i>
+                </p> 
+                <p> When assessment goals are reached - <strong>it's reporting time</strong>.<br>
+                  No "<i>but</i>"s and "<i>what if</i>"s... </p>
+              </li>
+            </ul>
+              
+          </div>
+        </section>
+
+        <section class="slide-top">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80 slide-top">
+            <h2> What I didn't have time to mention... </h2>
+              <h4> ...that are Psychology's foundamentals for this topic </h4>
+              <hr/>
+
+              <ul class="flexblock">
+                <li> <strong> <i>Pavlov's</i> Classical Conditioning </strong> 
+                  <p> Associating an irrelevant stimulus with a (un)pleasurable experience </p>
+                </li>
+
+                <li> <strong> <i>Skinner's</i> Operant Conditioning </strong>
+                  <p> Associating an irrelevant <i>behaviour</i> with a (un)pleasurable experience </p>
+                </li>
+              </ul>
+
+              <ul class="flexblock">
+                <li> <strong> Reinforcement Learning </strong>
+                  <p> Learning that <i>conducting</i> the associated behaviour leads to the desired experience </p>
+                </li>
+
+                <li> <strong> Random Outcomes to Behavioural Addictions </strong>
+                  <p> If the learned behaviour does <i>not always</i> lead to the desired experience it can get <i>us addicted</i>. <br>
+                  Think of the <i>slots</i>, or <i>content quality on Social Media feeds</i>  
+                   </p>
+                </li>
+              </ul>
+        </div>
+        </section>
+
+        <section class="slide-top">
+          <h1> References </h1>
+          <div>
+            <p>
+            Mcleod, S. (2022, November 3). <i>Behaviorism In Psychology</i>. <a href="https://www.simplypsychology.org/behaviorism.html"> https://www.simplypsychology.org/behaviorism.html </a>
+            </p>
+            <p>
+            Szalavitz, M. (2016, September 8). <i>Addicted to Anticipation</i>. Nautilus. <a href="https://nautil.us/addicted-to-anticipation-236104/"> https://nautil.us/addicted-to-anticipation-236104/ </a>
+            </p>
+            <p>
+            Perales, J. C., King, D. L., Navas, J. F., Schimmenti, A., Sescousse, G., Starcevic, V., van Holst, R. J., & Billieux, J. (2020). <i>Learning to lose control: A process-based account of behavioral addiction</i>. Neuroscience & Biobehavioral Reviews, 108, 771–780. <a href="https://doi.org/10.1016/j.neubiorev.2019.12.025"> https://doi.org/10.1016/j.neubiorev.2019.12.025 </a>
+            </p>
+            <p> Pérez Alvarez, M. (2021). <i>WHY SHOULD WE CARE ABOUT SKINNER, THIRTY YEARS ON</i>. <a href="https://doi.org/10.23923/pap.psicol2020.2940">https://doi.org/10.23923/pap.psicol2020.2940</a>
+            </p>
+
+          </div>
+        </section>
+
+        <section class="slide-bottom">
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-80 content-center">
+            <h1> Thank You </h1>
+            Let's scroll our phones again now...
+          </div>
+
+          <div class="wrap size-100 content-center slide-bottom" style="margin-top: 20%">
+
+            <a href="https://securosophy.com/2023/06/02/red-team-ops-psychology-an-act-in-4-parts/"> My Extended Blog Post on the topic of Red Teaming Psychology in <i>Securosophy</i> </a>
+          </div>
+
+        </section>
+      </article>
+    </main>
+    <!--main-->
+
+    <footer>
+      <div class="wrap grid">
+        <p class="alignright content-right"> John Torakis - Creative Commons - 2024 </p>
+      </div>
+    </footer>
+
+    <!-- Required -->
+    <script src="./webslides/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="./webslides/js/svg-icons.js"></script>
+
+  </body>
+</html>
